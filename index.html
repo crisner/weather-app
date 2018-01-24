@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Weather app</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
@@ -14,28 +14,39 @@
     <link rel="stylesheet" href="css/weather-icons-wind.min.css">
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h3>Weather</h3>
-            <div id="location"></div>
-            <!-- <div id="location">Coimbatore, TamilNadu, IN</div> -->
-            <div id="day"></div>
-            <div id="time"></div>
-            <div id="icon"></div>
-            <div id="weather"></div>
-            <div id="temp"></div>
-        </div>
-    </div>
-</div>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Today's Weather</h3>
+                <div id="location"></div>
+                <div class="d-flex justify-content-center align-items-baseline otherconditionsOne">
+                    <div id="day" class="otherconditionsOne"></div>
+                    <div id="time" class="otherconditionsOne"></div>
+                </div><!-- time -->
+                <div id="weather"></div>
+                <div class="d-flex justify-content-center align-items-center otherconditionsThree">
+                    <div id="icon"></div>
+                    <div id="temp"></div>
+                </div><!-- temp icon -->
+                <div class="d-flex justify-content-center align-items-center">
+                    <button type="button" id="celsius" class="btn btn-light"><i class="wi wi-celsius"></i></button> 
+                    <button type="button" id="fahrenheit" class="btn btn-light"><i class="wi wi-fahrenheit"></i></button>
+                </div><!-- units buttons -->
+                <div class="d-flex justify-content-center align-items-flex-end otherconditionsTwo">
+                    <div id="humidity" class="otherconditionsTwo"></div>
+                    <div id="windspeed" class="otherconditionsTwo"></div>
+                </div><!-- otherconditions -->
+            </div><!-- col -->
+        </div><!-- row -->
+    </div><!-- container -->
+    <footer>Made by <a href="www.renishachristie.com">Renisha Christie</a></footer>
    
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
     
-    <!-- <script  src="js/index.js"></script>  
+    <script  src="js/index.js"></script>  
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlfhTguKmRPS94B4TAsEaX7iS-AocGyIE&callback=getCoords">
-    </script> -->
+    </script>
 </body>
 </html>
