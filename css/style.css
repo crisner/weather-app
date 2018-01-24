@@ -1,0 +1,23 @@
+html,body {
+    height: 100%;
+    background-color: #555;
+    background: linear-gradient(to right, rgba(16, 67, 90, 1) 30%, rgba(31, 38, 58, 0.3) 80%);
+    background-image: url("../images/pexels-photo-813396.jpg"); 
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+    font-family: 'Abel', sans-serif;
+    
+}
+
+.container {
+    /* border: 1px solid red; */
+    
+    
+}
+
+h3 {
+    text-align: center;
+    /* font-weight: 400; */
+}
