@@ -96,13 +96,13 @@ function displayTime() {
     var currentTime = "";
     // Convert to 12-hour time format
     // if hour is equal than 0
-    if (hour == 0) {
-        currentTime = 12 + ":" + minutes + " AM";
+    if (hour === 0) {
+        currentTime = noOfHours + ":" + minutes + " AM";
     // if hour is less than 12
     } else if (hour < noOfHours) {
         currentTime = hour + ":" + minutes + " AM";
     // if hour is equal to 12
-    } else if (hour == noOfHours) {
+    } else if (hour === noOfHours) {
         currentTime = hour + ":" + minutes + " PM";
     } else {
     // if hour is more than 12
