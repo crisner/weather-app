@@ -103,7 +103,7 @@ function displayTime() {
         currentTime = hour + ":" + minutes + " PM";
     // if hour equal to 24
     } else if ((hour - noOfHours) == 12) {
-        currentTime = "00:" + minutes + " AM";
+        currentTime = (hour - noOfHours) + ":" + minutes + " AM";
     } else {
         // if hour is more than 12
         currentTime = (hour - noOfHours) + ":" + minutes + " PM";
