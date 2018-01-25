@@ -61,7 +61,7 @@ h3 {
     font-size: 1.5rem;
     width: 8rem;
     padding-bottom: 0;
-    background-color: rgba(144,202,249 ,0.1);
+    background-color: rgba(144,202,249 ,0.2);
     border-color: transparent;
     border-radius: 0;
 }
@@ -110,9 +110,9 @@ footer {
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
     position: absolute;
-    top: 98%;
+    top: 99%;
     left: 50%;
-    transform: translate(-50%,-98%);
+    transform: translate(-50%,-99%);
 }
 
 a:link,
