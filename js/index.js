@@ -50,12 +50,11 @@ function displayWeather(json) {
     $("#windspeed").html(windSpeed);
 
     if ($("#temp").html() === celsius) {
-        console.log(true);
         $("#celsius").addClass("active-temp");
     } else {
         $("#fahrenheit").addClass("active-temp");
     }
-
+    // Change button states
     $("#celsius").on("click", function() {
         $("#temp").html(celsius);
         $("#fahrenheit").removeClass("active-temp");
@@ -76,7 +75,6 @@ function displayWeather(json) {
 
     // Display weather icon
     displayIcon(weatherId);
-    console.log(weatherCode, weatherId);
 }
 
 function displayDate() {
@@ -138,12 +136,10 @@ function displayBackgroundImage(weatherCode) {
             break;
         case "09d":
         case "10d":
-        case "13d":
             $("body").css("background-image", "url('../images/thanun-buranapong-179.jpg')");
             break;
         case "09n":
         case "10n":
-        case "13n":
             $("body").css("background-image", "url('../images/gabriele-diwald-201135.jpg')");
             break;
         case "11d":
@@ -185,6 +181,19 @@ function displayIcon(weatherId) {
             iconClass = "wi wi-night-clear";
         }
     }
+    // Fix for wi-own-701 class for mist
+    if (weatherId === 701) {
+        // Get today's date
+        var today = new Date();
+        // Get current time
+        var hour = today.getHours();
+        if (hour < 19) {
+            iconClass = "wi wi-day-fog";
+        } else {
+            iconClass = "wi wi-night-fog";
+        }
+    }
+    // Display icon
     icon = "<i class='"+ iconClass +"'></i>";
     $("#icon").html(icon);
 }
