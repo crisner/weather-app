@@ -115,53 +115,53 @@ function displayBackgroundImage(weatherCode) {
     // Display background according to the weather
     switch(weatherCode) {
         case "01d":
-            $("body").css("background-image", "url('images/sebastien-gabriel-13684.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/sebastien-gabriel-13684.jpg')");
             break;
         case "01n":
-            $("body").css("background-image", "url('images/massimiliano-reginato-357364.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/massimiliano-reginato-357364.jpg')");
             break;
         case "02d":
         case "03d":
-            $("body").css("background-image", "url('images/vashti-collins-53161.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/vashti-collins-53161.jpg')");
             break;
         case "02n":
         case "03n":
-            $("body").css("background-image", "url('images/jack-b-389959.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/jack-b-389959.jpg')");
             break;
         case "04d":
-            $("body").css("background-image", "url('images/matthew-kane-77216.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/matthew-kane-77216.jpg')");
             break;
         case "04n":
-            $("body").css("background-image", "url('images/dorin-vancea-215017.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/dorin-vancea-215017.jpg')");
             break;
         case "09d":
         case "10d":
-            $("body").css("background-image", "url('images/thanun-buranapong-179.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/thanun-buranapong-179.jpg')");
             break;
         case "09n":
         case "10n":
-            $("body").css("background-image", "url('images/gabriele-diwald-201135.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/gabriele-diwald-201135.jpg')");
             break;
         case "11d":
-            $("body").css("background-image", "url('images/john-fowler-397527.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/john-fowler-397527.jpg')");
             break;
         case "11n":
-            $("body").css("background-image", "url('images/riccardo-chiarini-260264.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/riccardo-chiarini-260264.jpg')");
             break;
         case "13d":
-            $("body").css("background-image", "url('images/max-sandelin-239035.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/max-sandelin-239035.jpg')");
             break;
         case "13n":
-            $("body").css("background-image", "url('images/grant-lemons-68726.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/grant-lemons-68726.jpg')");
             break;
         case "50d":
-            $("body").css("background-image", "url('images/sunbeam-fog-autumn-nature-69825.jpeg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/sunbeam-fog-autumn-nature-69825.jpeg')");
             break;
         case "50n":
-            $("body").css("background-image", "url('images/pexels-photo-327308.jpeg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/pexels-photo-327308.jpeg')");
             break;
         default:
-            $("body").css("background-image", "url('images/ryan-waring-366060.jpg')");
+            $("body").css("background-image", "url('https://crisner.github.io/weather-app/images/ryan-waring-366060.jpg')");
     }
 }
 
