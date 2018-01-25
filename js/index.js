@@ -122,7 +122,7 @@ function displayBackgroundImage(weatherCode) {
             break;
         case "02d":
         case "03d":
-            $("body").css("background-image", "url('../images/vashti-collins-53161.jpg')");
+            $("body").css("background-image", "url('../weather-app/images/vashti-collins-53161.jpg')");
             break;
         case "02n":
         case "03n":
