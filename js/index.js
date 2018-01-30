@@ -167,8 +167,14 @@ function displayBackgroundImage(weatherCode) {
 
 function displayIcon(weatherId) {
     // If weatherId value is available display deafault icons
-    var iconClass = "wi wi-owm-" + weatherId;
+    var iconClass;
     var icon;
+    // Display weather icon
+    if (hour < 19) {
+        iconClass = "wi wi-owm-day-" + weatherId;
+    } else {
+        iconClass = "wi wi-owm-night-" + weatherId;
+    }
     // If weatherId value is outside the available values
     if (weatherId < 200 || weatherId > 957) {
         // Get today's date
