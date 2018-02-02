@@ -169,30 +169,28 @@ function displayIcon(weatherId) {
     // If weatherId value is available display deafault icons
     var iconClass;
     var icon;
-    // Display weather icon
-    if (hour < 19) {
-        iconClass = "wi wi-owm-day-" + weatherId;
-    } else {
-        iconClass = "wi wi-owm-night-" + weatherId;
-    }
+    // Get today's date
+    var today = new Date();
+    // Get current time
+    var hour = today.getHours();
+    
     // If weatherId value is outside the available values
     if (weatherId < 200 || weatherId > 957) {
-        // Get today's date
-        var today = new Date();
-        // Get current time
-        var hour = today.getHours();
         if (hour < 19) {
             iconClass = "wi wi-day-sunny";
         } else {
             iconClass = "wi wi-night-clear";
         }
+    } else {
+        // If weatherId value is within the available values
+        if (hour < 19) {
+            iconClass = "wi wi-owm-day-" + weatherId;
+        } else {
+            iconClass = "wi wi-owm-night-" + weatherId;
+        }
     }
     // Fix for wi-own-701 class for mist
     if (weatherId === 701) {
-        // Get today's date
-        var today = new Date();
-        // Get current time
-        var hour = today.getHours();
         if (hour < 19) {
             iconClass = "wi wi-day-fog";
         } else {
