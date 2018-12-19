@@ -5,7 +5,7 @@ Project for FreeCodeCamp's intermediate front end development section
 
 ### Tools used
 - jQuery
-- Bootsrap
+- Bootstrap
 - Google map api
 - Open Weather Map api
 
